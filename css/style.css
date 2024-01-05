@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+  background-color: black;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: white;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+
+.green-label {
+  color: #4CAF50; /* Warna hijau */
+}
+
+.green-text {
+  color: #4CAF50; /* Warna hijau */
+}
+
+.center-buttons {
+  text-align: center;
+}
+
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result, #calculation {
+  margin-top: 20px;
+  color: white;
+}
+
+em {
+  color: #4CAF50;
+}

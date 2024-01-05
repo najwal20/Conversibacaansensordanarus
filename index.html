@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Konversi Suhu dan Arus</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Kalkulator Konversi Suhu dan Arus</h2>
+
+
+
+<form id="conversionForm">
+  <table>
+    <tr>
+      <td><label for="inputRange" class="green-label">Rentang Suhu:</label></td>
+      <td><input type="text" id="inputRange" name="inputRange" placeholder="Contoh: -70 to 190" required></td>
+      <td><em class="green-text">Masukkan rentang suhu dalam format -70 to 190</em></td>
+    </tr>
+    <tr>
+      <td><label for="knownValue" class="green-label">Nilai yang Diketahui:</label></td>
+      <td><input type="number" id="knownValue" name="knownValue" required></td>
+      <td><em class="green-text">Masukkan nilai suhu atau arus (dalam mA) yang diketahui</em></td>
+    </tr>
+    <tr>
+      <td><label for="conversionType" class="green-label">Jenis Konversi:</label></td>
+      <td>
+        <select id="conversionType" name="conversionType">
+          <option value="suhuToArus">Suhu ke Arus</option>
+          <option value="arusToSuhu">Arus ke Suhu</option>
+        </select>
+      </td>
+      <td><em class="green-text">Pilih jenis konversi yang diinginkan</em></td>
+    </tr>
+    <tr>
+      <td colspan="3" class="center-buttons"> <!-- Tambahkan class center-buttons di sini -->
+        <button type="button" onclick="convert()">Konversi</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+      </td>
+    </tr>
+  </table>
+</form>
+
+<p id="result"></p>
+<p id="calculation"></p>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
